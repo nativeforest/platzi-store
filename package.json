@@ -1,7 +1,7 @@
 {
-  "name": "platzi-store",
+  "name": "example-store",
   "version": "1.0.0",
-  "description": "Proyecto para el curso de Jest",
+  "description": " Jest Project course",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -23,7 +23,7 @@
     "React-router",
     "Redux"
   ],
-  "author": "Oscar Barajas <oscar@arepa.dev>",
+  "author": "created by Oscar Barajas <oscar@arepa.dev> modified by Andres ZL",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.7.2",

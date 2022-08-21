@@ -1,8 +1,9 @@
 import React from 'react';
 // import 'jsdom-global/register';
 import { mount } from 'enzyme';
-import Footer from '../../components/Footer';
 import { create } from 'react-test-renderer';
+import Footer from '../../components/Footer';
+
 describe('testing <Footer/>', () => {
   const footer = mount(<Footer />);
   test('render component', () => {

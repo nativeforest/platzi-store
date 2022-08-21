@@ -1,15 +1,16 @@
 import { mount, shallow } from 'enzyme';
 import React from 'react';
+import { create } from 'react-test-renderer';
+// eslint-disable-next-line import/no-unresolved
 import ProviderMock from '../../__mocks__/ProviderMock';
 import Header from '../../components/Header';
-import { create } from 'react-test-renderer';
 
 describe('testing <Header />', () => {
   test('render component header', () => {
     const header = shallow(
       <ProviderMock>
         <Header />
-      </ProviderMock>
+      </ProviderMock>,
     );
     expect(header.length).toEqual(1);
   });
