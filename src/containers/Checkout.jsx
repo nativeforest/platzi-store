@@ -19,7 +19,7 @@ const Checkout = (props) => {
   return (
     <div className="Checkout">
       <div className="Checkout-content">
-        {cart.length > 0 ? <h3>Lista de Pedidos:</h3> : <h2>Sin Pedidos</h2>}
+        {cart.length > 0 ? <h3>Wish list:</h3> : <h2>Empty</h2>}
         {cart.map(item => (
           <div className="Checkout-item" key={item.title}>
             <div className="Checkout-element">
@@ -41,7 +41,7 @@ const Checkout = (props) => {
       {cart.length > 0 && (
         <div className="Checkout-sidebar">
           <h3>
-            {`Precio Total: $ ${handleSumTotal()}`}
+            {`Total price: $ ${handleSumTotal()}`}
           </h3>
         </div>
       )}
